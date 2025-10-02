@@ -1,0 +1,146 @@
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(120deg, #f9fafc 0%, #dbeafe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container,
+.form-container * {
+  box-sizing: border-box;
+}
+
+.form-container {
+  max-width: 380px;
+  width: 100%;
+  padding: 32px 28px 28px 28px;
+  border-radius: 20px;
+  box-shadow: 0 6px 32px rgba(71, 124, 232, 0.15), 0 1.5px 5px rgba(75, 85, 99, 0.08);
+  background: #fff;
+}
+
+.form-group input {
+  width: 100%;
+  /* Keep padding as before */
+}
+
+.form-container {
+  background: #fff;
+  max-width: 420px;
+  width: 100%;
+  padding: 32px 28px 28px 28px;
+  border-radius: 20px;
+  box-shadow: 0 6px 32px rgba(71, 124, 232, 0.15), 0 1.5px 5px rgba(75, 85, 99, 0.08);
+  text-align: left;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 40px 14px 18px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #f3f6fa;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #5b77fd;
+  box-shadow: 0 0 0 2px #dbeafe;
+}
+
+.form-group label {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  color: #7281a2;
+  background: transparent;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 12px;
+  font-size: 0.88rem;
+  color: #36519d;
+  background: #fff;
+  padding: 0 6px;
+}
+
+/* Icon inside input (basic example, use background image or SVG for real icons) */
+.form-group .icon {
+  position: absolute;
+  top: 16px;
+  right: 14px;
+  color: #b2b9cd;
+  font-size: 1.2rem;
+}
+
+/* Enhanced button */
+.form-container button {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg, #6b8ff8, #96a7ff 80%);
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(91, 119, 253, 0.10);
+  cursor: pointer;
+  transition: transform 0.15s, background 0.2s;
+}
+.form-container button:hover {
+  background: linear-gradient(90deg, #36519d 0%, #6b8ff8 100%);
+  transform: translateY(-2px) scale(1.03);
+}
