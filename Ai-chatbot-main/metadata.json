@@ -1,0 +1,5 @@
+{
+  "name": "AI Chatbot MERN Interface",
+  "description": "A responsive React chat interface designed for a MERN application with a provider-agnostic AI backend. It features session management, streaming responses, and provider/model selection.",
+  "requestFramePermissions": []
+}
